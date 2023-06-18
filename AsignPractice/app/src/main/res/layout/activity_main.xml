@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_view_radio"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:text="Please select the type of burger."
+        android:layout_centerHorizontal = "true"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_centerHorizontal = "true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txt_view_radio"
+        >
+
+        <RadioButton
+            android:id = "@+id/radio_chick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicken"
+            android:onClick="checkButton" />
+
+        <RadioButton
+            android:id = "@+id/radio_beef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beef"
+            android:onClick="checkButton"/>
+
+        <RadioButton
+            android:id = "@+id/radio_pork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pork"
+            android:onClick="checkButton"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_view_check"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:text="Please select the toppings"
+        android:layout_centerHorizontal = "true"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/radio_group"
+
+        />
+
+    <CheckBox
+        android:id="@+id/check1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PineApples"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txt_view_check"
+        android:layout_marginLeft="@dimen/check_start"
+        />
+
+    <CheckBox
+        android:id="@+id/check2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Onions"
+        android:layout_below="@+id/check1"
+        android:layout_marginLeft="@dimen/check_start" />
+
+    <CheckBox
+        android:id="@+id/check3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pickles"
+        android:layout_below="@+id/check2"
+        android:layout_marginLeft="@dimen/check_start"/>
+
+    <CheckBox
+        android:id="@+id/check4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ketchup"
+        android:layout_below="@+id/check3"
+        android:layout_marginLeft="@dimen/check_start"/>
+
+
+
+
+
+    <Button
+        android:id="@+id/apply_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_centerHorizontal="true"
+        android:layout_below = "@+id/check4"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+</RelativeLayout>

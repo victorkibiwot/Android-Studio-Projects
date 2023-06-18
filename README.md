@@ -1,2 +1,2 @@
 # Android-Studio-Projects
-This repo contains simple and semi-complex projects developed in Android studio. The main language used in development is java and kotlin.
+This repo contains simple and semi-complex projects developed in Android studio. The main language used in development is java and kotlin. The sample projects include a BMI level calculator, Box Volume Density calculator and some practice assignments from class. Lastly, there is a semi-complex app that I tried to build just so I could see my sign language translator in action. However, it still incomplete and needs alot of improvements. Feel free to take on the task of challenging yourself and completing it! 

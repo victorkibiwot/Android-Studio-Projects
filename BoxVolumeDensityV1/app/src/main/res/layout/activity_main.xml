@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_margin"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <TextView
+        android:text="@string/table_title"
+        android:textSize="@dimen/table_title_text_size"/>
+    </TableRow>
+
+    <!-- Line -->
+    <View
+        android:layout_height="3dip"
+        android:background="@color/teal_200"
+        />
+
+    <!-- Height Row-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text = "@string/label_height"
+            android:textSize="@dimen/table_cell_text_size"/>
+        <TextView
+            android:id="@+id/height"
+            android:text ="@string/default_value_input"
+            android:textSize="@dimen/table_cell_text_size"/>
+    </TableRow>
+
+    <!-- Width Row-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text = "@string/label_width"
+            android:textSize="@dimen/table_cell_text_size"/>
+        <TextView
+            android:id="@+id/width"
+            android:text ="@string/default_value_input"
+            android:textSize="@dimen/table_cell_text_size"/>
+    </TableRow>
+
+    <!-- Length Row-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text = "@string/label_length"
+            android:textSize="@dimen/table_cell_text_size"/>
+        <TextView
+            android:id="@+id/length"
+            android:text ="@string/default_value_input"
+            android:textSize="@dimen/table_cell_text_size"/>
+    </TableRow>
+
+    <!-- Weight Row-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text = "@string/label_weight"
+            android:textSize="@dimen/table_cell_text_size"/>
+        <TextView
+            android:id="@+id/weight"
+            android:text ="@string/default_value_input"
+            android:textSize="@dimen/table_cell_text_size"/>
+    </TableRow>
+
+    <!-- Line -->
+    <View
+        android:layout_height="3dip"
+        android:background="@color/teal_200"
+        />
+
+    <!-- Volume Row-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip">
+        <TextView
+            android:text = "@string/label_volume"
+            android:textSize="@dimen/table_cell_text_size"/>
+        <TextView
+            android:id="@+id/volume"
+            android:text ="@string/volume_value"
+            android:textSize="@dimen/table_cell_text_size"/>
+    </TableRow>
+
+    <!-- Density Row-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text = "@string/label_density"
+            android:textSize="@dimen/table_cell_text_size"/>
+        <TextView
+            android:id="@+id/density"
+            android:text ="@string/density_value"
+            android:textSize="@dimen/table_cell_text_size"/>
+    </TableRow>
+
+    <!-- Change-Box-Data Row-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/change_data"
+            android:text ="@string/change_data"
+            android:backgroundTint="@color/teal_700"
+            android:textAllCaps="false"
+            android:textSize="@dimen/table_cell_text_size"
+            /> <!-- Add android:onClick-->
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_margin"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:text="@string/table_title"
+            android:textSize="@dimen/table_title_text_size"/>
+    </TableRow>
+
+    <!-- Line -->
+    <View
+        android:layout_height="3dip"
+        android:background="@color/teal_200"
+        />
+
+    <!-- Height Row-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text = "@string/label_height"
+            android:textSize="@dimen/table_cell_text_size"/>
+        <EditText
+            android:id="@+id/height_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/table_cell_text_size"/>
+    </TableRow>
+
+    <!-- Width Row-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text = "@string/label_width"
+            android:textSize="@dimen/table_cell_text_size"/>
+        <EditText
+            android:id="@+id/width_edit"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/table_cell_text_size"/>
+    </TableRow>
+
+    <!-- Length Row-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text = "@string/label_length"
+            android:textSize="@dimen/table_cell_text_size"/>
+        <EditText
+            android:id="@+id/length_edit"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/table_cell_text_size"/>
+    </TableRow>
+
+    <!-- Weight Row-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text = "@string/label_weight"
+            android:textSize="@dimen/table_cell_text_size"/>
+        <EditText
+            android:id="@+id/weight_edit"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/table_cell_text_size"/>
+    </TableRow>
+
+    <!-- Line -->
+    <View
+        android:layout_height="3dip"
+        android:background="@color/teal_200"
+        />
+
+
+    <!-- Update-Box-Data Row-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/done"
+            android:text ="@string/update"
+            android:backgroundTint="@color/teal_700"
+            android:textAllCaps="false"
+            android:textSize="@dimen/table_cell_text_size"
+            /> <!-- Add android:onClick-->
+    </TableRow>
+
+</TableLayout>
